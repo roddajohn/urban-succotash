@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <center>
+      <h1>Occupations</h1>
+    </center>
+    <table>
+      <td>
+      {% for b in bl %}
+	<tr>
+	  <td>{{ b.name }}</td>
+	  <td>{{ b.percentage }}</td>
+	</tr>
+      {% endfor %}
+    </table>
+    <br>
+    <br>
+    <strong>The randomly selected occupation is: {{ randomly_selected }}</strong>
+</html>
